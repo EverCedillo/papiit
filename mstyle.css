@@ -1,7 +1,10 @@
 html, body{
 	height: 100%;
+	width: 100%
 	font-family: Lato;
 	background: #0e0e0e;
+	font-size: 28px;
+	position: absolute;
 }
 
 
@@ -18,6 +21,7 @@ html, body{
 	z-index: 1000;
 }
 #Nav-list{
+	width: 100%;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -29,7 +33,7 @@ html, body{
 
 .nav-item{
 	display: inline-block;
-	margin: 1rem;
+	padding: 1rem;
 }
 
 .nav-link:visited, .nav-link:visited, .nav-link{
@@ -43,6 +47,7 @@ html, body{
 #home, #goals, #hardware{
 	height: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
@@ -60,7 +65,7 @@ html, body{
 .image{
 	-ms-align-self: center;
 	align-self: center;
-	max-width: 50%;
+	width: 100%;
 	
 }
 
@@ -83,7 +88,8 @@ html, body{
 	display: flex;
 	height: 100%;
 	background: #eeeeee;
-	width: 50%;
+	width: 100%;
+	order: 2;
 	z-index: 100;
 }
 
@@ -123,14 +129,15 @@ h1, h2{
 	background: no-repeat url("car.jpg") center;
 	background-size: 100%;
 	height: 100%;
-	width: 50%;
+	width: 100%;
 }
 
 #goals > .image{
 	background: no-repeat url("car2.jpg") center;
 	background-size: 100%;
 	height: 100%;
-	width: 50%;
+	width: 100%;
+	order: 1;
 }
 
 #hardware > .image{
@@ -147,13 +154,15 @@ h1, h2{
 	width: 100%;
 	padding: 0rem;
 	height: 80%;
+	flex-wrap: wrap;
 }
 
 .more-item{
 	-ms-align-self: center;
 	align-self: center;
-	width: 22%;
-	height: 85%;
+	width: 45%;
+	margin: 3% 0 3% 0;
+	height: 42%;
 	display: flex;
 	flex-direction: column;
 	background: #eeeeeb;
@@ -170,7 +179,7 @@ h1, h2{
 }
 
 .sub-section h1{
-	height: 20%;
+	height: 10%;
 }
 
 #more img{
@@ -197,7 +206,7 @@ h1, h2{
 .thumb{
 	width: 100%;
     margin: auto;
-    height: 70%;
+    height: 60%;
 }
 .overlay{
 	width: 100%;
@@ -207,15 +216,4 @@ h1, h2{
 
 #more .sub-section{
 	box-shadow: 0 -.25rem .5rem gray;
-}
-
-
-@media  (max-width:850px) {
-	html{background: #fff}
-		#home, #goals, #hardware{
-		height: 50%;
-		display: flex;
-		justify-content: space-between;
-		background: red;
-	}
 }
