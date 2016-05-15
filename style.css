@@ -1,8 +1,11 @@
 html, body{
 	height: 100%;
+	width: 100%;
+	margin: auto;
 	font-family: Lato;
 	background: #0e0e0e;
 }
+
 
 
 #Nav{
@@ -40,7 +43,7 @@ html, body{
 }
 
 
-#home, #goals, #hardware{
+#home, #goals, #hardware, #plataforma, #modelado{
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -82,7 +85,7 @@ html, body{
 	box-shadow: 0 0 1em black;
 	display: flex;
 	height: 100%;
-	background: #eeeeee;
+	background: #eee;
 	width: 50%;
 	z-index: 100;
 }
@@ -157,7 +160,7 @@ h1, h2{
 	display: flex;
 	flex-direction: column;
 	background: #eeeeeb;
-	box-shadow: 1px 1px 2px gray;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.4);
 }
 
 
@@ -206,16 +209,28 @@ h1, h2{
 }
 
 #more .sub-section{
-	box-shadow: 0 -.25rem .5rem gray;
+	box-shadow: 0 -.25rem .5rem rgba(0,0,0,.4);
 }
 
 
-@media  (max-width:850px) {
-	html{background: #fff}
-		#home, #goals, #hardware{
-		height: 50%;
-		display: flex;
-		justify-content: space-between;
-		background: red;
-	}
+#hardware > .image{
+	background: no-repeat url("plataforma.png") center;
+	background-size: 100%;
+	height: 100%;
+	width: 50%;
+}
+
+#plataforma > .image{
+	background: no-repeat url("thumb5.png") center;
+	background-size: 100%;
+	height: 100%;
+	width: 50%;
+}
+
+#hardware p, #plataforma p{
+	text-align: justify;
+}
+
+section > .image{
+	opacity: .8;
 }

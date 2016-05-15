@@ -1,6 +1,6 @@
 html, body{
 	height: 100%;
-	width: 100%
+	width: 100%;
 	font-family: Lato;
 	background: #0e0e0e;
 	font-size: 28px;
@@ -216,4 +216,29 @@ h1, h2{
 
 #more .sub-section{
 	box-shadow: 0 -.25rem .5rem gray;
+}
+
+
+#hardware > .image{
+	background: no-repeat url("plataforma.png") center;
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+.description {
+	
+}
+#hardware .sub-section{
+	height: auto;
+}
+#hardware{
+	height: auto;
+}
+#hardware p {
+	width: 100%;
+	height: 50%;
+	text-align: justify;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
