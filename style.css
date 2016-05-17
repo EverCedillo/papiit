@@ -43,7 +43,7 @@ html, body{
 }
 
 
-#home, #goals, #hardware, #plataforma, #modelado, section{
+#home, #goals, #hardware, #plataforma, #modelado{
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
