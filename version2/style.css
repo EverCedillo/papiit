@@ -1,0 +1,151 @@
+html{
+	height: 100%;
+	width: 100%;
+	background: #eee;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
+	font-size: 16px;
+}
+
+body{
+	margin: auto;
+	width: 80%;
+	
+
+	margin-bottom: 3rem;
+	margin-top: 5rem;
+	padding: 3rem;
+	bottom: 0;
+}
+
+#Nav{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: teal;
+	height: 50%;
+	transition: .7s;
+	box-shadow: 3px 3px 6px rgba(0,0,0,.4);
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+}
+
+#imageHeader{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	left: 0;
+	bottom:0;
+	width: 100%;
+	max-width: none;
+	background: repeat-x url("car3.jpg") bottom center;
+	background-size: auto 100%;
+	transition: .7s;
+}
+
+.imHOnScroll{
+	opacity: 0;
+	transition: .7s;
+}
+
+#menu-list{
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+	padding-right: 3rem;
+	height:3rem;
+}
+
+.menu-item{
+	font-weight: bold;
+	display: inline-block;
+	color: #eeefee;
+	padding: 1rem;
+}
+.onScroll{
+	height: 4rem !important;
+	
+}
+
+.titleOnScroll{
+	font-size: 1.5rem!important;
+	transition: 1s;
+	bottom: 0!important;
+
+}
+
+section{
+	margin-bottom:1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+#home{
+	height: 120%;
+}
+
+.red{
+	border-bottom: 2px whitesmoke solid;
+	background: rgba(255,255,255,.1);
+
+}
+
+#title{
+	color: whitesmoke;
+	margin: 0;
+	margin-left: 2rem;
+	align-self: baseline;
+	margin-bottom: 1rem;
+	transition: 1s;
+	font-size: 2rem;
+	position: absolute;
+	bottom: 3rem;
+}
+
+.image-box{
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 30rem;
+	margin: auto;
+
+}
+.image-item{
+	width: 25%;
+	margin: 0;
+	display: flex;
+	height: 10rem;
+	box-shadow: 0px 0px 4px rgba(0,0,0,.4);
+}
+
+.image-item:hover{
+	background: gold;
+}
+.image-item:hover img{
+	opacity: .5;
+	transition: .5s;
+}
+
+.image-item img{
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.content img{
+	float: right;
+	width: 45%;
+	margin: 1.5rem;
+}
+
+.content p{
+	width: 100%;
+	display: inline-block;
+	line-height: 1.5rem;
+	text-align: justify;
+
+}
