@@ -3,7 +3,7 @@ html, body{
 	width: 100%;
 	margin: auto;
 	font-family: Lato;
-	background: #0e0e0e;
+	background: #d6d3cc;
 }
 
 
@@ -12,7 +12,7 @@ html, body{
 	height: 4em;
 	width: 100%;
 	text-align: center;
-	background: #4C082B;
+	background: teal;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -42,6 +42,23 @@ html, body{
 	height: 100%;
 }
 
+.nav-link >i{
+	color: #A66F00;
+	font-size: 5rem;
+	text-shadow: 2px 2px 8px rgba(25,0,0,.8);
+}
+
+a.nav-link:hover > i {
+    color: #A68F00;
+    text-shadow: 3px 3px 12px rgba(25,0,0,.8);
+    transition: .5s;
+}
+a.nav-link:active > i {
+
+    text-shadow: 3px 3px 8px rgba(25,0,0,.9);
+    transition: .5s;
+}
+
 
 #home, #goals, #hardware, #plataforma, #modelado{
 	height: 100%;
@@ -64,7 +81,7 @@ html, body{
 	-ms-align-self: center;
 	align-self: center;
 	max-width: 50%;
-	
+
 }
 
 .description{
@@ -75,25 +92,28 @@ html, body{
 	text-align: center;
 }
 
-.description p{
-	font-size: 1.5rem;
+.description p, .description ul li{
+	font-size: 1.1rem;
 	font-weight: lighter;
+	text-align: justify;
+	margin: 1em;
 }
 
+
+
 .sub-section{
-	
-	box-shadow: 0 0 1em black;
+
 	display: flex;
 	height: 100%;
 	background: #eee;
-	width: 50%;
+	width: 70%;
 	z-index: 100;
 }
 
 h1, h2{
 	text-align: center;
-	color: #4C082B;
-	/*#B2DFDB;*/
+	color: /*teal;*/
+	#03153e;
 }
 
 .arrow{
@@ -102,21 +122,23 @@ h1, h2{
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
 }
 
-
+section > .image{
+	box-shadow:inset 0 0 1em black;
+}
 #more{
 	height: 100%;
 }
 
 #more > .sub-section{
 	width: 100%;
-	height: 60%;
+	height: 65%;
 	display: flex;
 	flex-direction: column;
 }
 
 #more > .image{
 	width: 100%;
-	height: 40%;
+	height: 35%;
 	max-width: none;
 	background: repeat-x url("car3.jpg") bottom center;
 	background-size: auto 100%;
@@ -155,12 +177,17 @@ h1, h2{
 .more-item{
 	-ms-align-self: center;
 	align-self: center;
-	width: 22%;
-	height: 85%;
+	width: 28%;
+	height: 90%;
 	display: flex;
 	flex-direction: column;
 	background: #eeeeeb;
 	box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+	transition: background .7s;
+}
+
+.more-item a{
+
 }
 
 
@@ -184,17 +211,18 @@ h1, h2{
     object-position: top;
 }
 .more-item:hover {
-	background: #4C082B;
-	transition: 1s;
+	background: rgba(166, 143, 0, 0.52);
+
 	cursor: pointer;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.4);
 }
 
 .more-item:hover img{
-	opacity: .5;
+	opacity: .8;
 }
 
 .more-item:hover h2{
-	
+
 	color: white;
 }
 .thumb{
