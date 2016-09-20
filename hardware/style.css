@@ -69,6 +69,14 @@ body{
 	color: #eeefee;
 	padding: 1rem;
 }
+.menu-item a{
+	text-decoration: none;
+	color: currentColor;
+}
+
+.menu-item a:visited{
+	color: currentColor;
+}
 .onScroll{
 	height: 4rem !important;
 
